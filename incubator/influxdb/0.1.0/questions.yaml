@@ -1,7 +1,10 @@
-# Include{groups}
+groups:
+    - name: "Storage"
+      description: ""
 questions:
   - variable: hostPath
     label: "Host Path for Minio Data Volume"
+    group: "Storage"
     schema:
       type: hostpath
       required: true
