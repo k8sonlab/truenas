@@ -1,6 +1,8 @@
 groups:
     - name: "Storage"
       description: ""
+    - name: "Admin"
+      description: ""
 questions:
   - variable: hostPath
     label: "Host Path for Minio Data Volume"
@@ -9,3 +11,27 @@ questions:
       type: hostpath
       required: true
       immutable: true
+  - variable: setDefaultUser:
+    label: "Admin Data"
+    group: "Admin"
+    schema: 
+      additional_attrs: true
+      type: dict
+      attrs:
+        - variable: user
+          label: "Admin User"
+          schema:
+            additional_attrs: true
+            type: dict
+            attrs:
+              - variable: username
+                schema:
+                  type: string
+                  required: true
+                  immutable: true
+              - variable: password
+                schema:
+                  type: string
+                  requires: true
+                  immutable: true
+

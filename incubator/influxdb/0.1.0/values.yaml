@@ -3,4 +3,9 @@ influxdb:
     enabled: true
     storageClass: manual
   service:
-    type: NodePort    
+    type: NodePort
+    nodePorts:
+      http: "32900"
+  setDefaultUser:
+    enabled: true
+     
