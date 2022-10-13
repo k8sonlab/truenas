@@ -11,7 +11,7 @@ questions:
       type: hostpath
       required: true
       immutable: true
-  - variable: setDefaultUser:
+  - variable: setDefaultUser
     label: "Admin Data"
     group: "Admin"
     schema: 
