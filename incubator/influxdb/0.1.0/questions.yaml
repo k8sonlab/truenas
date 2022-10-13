@@ -25,11 +25,13 @@ questions:
             type: dict
             attrs:
               - variable: username
+                label: Admin User
                 schema:
                   type: string
                   required: true
                   immutable: true
               - variable: password
+                label: Admin Pass
                 schema:
                   type: string
                   requires: true
