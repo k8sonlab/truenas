@@ -1,0 +1,6 @@
+influxdb:
+  persistence:
+    enabled: true
+    storageClass: manual
+  service:
+    type: NodePort    

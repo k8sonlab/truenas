@@ -1,0 +1,8 @@
+# Include{groups}
+questions:
+  - variable: hostPath
+    label: "Host Path for Minio Data Volume"
+    schema:
+      type: hostpath
+      required: true
+      immutable: true
